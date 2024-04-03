@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "7647a46beed075b70750127986c41af9"
+name = "my-remix-app (kris)"
+handle = "my-remix-app-kris"
+application_url = "https://deciding-handy-haddock.ngrok-free.app"
+embedded = true
+
+[build]
+dev_store_url = "swaggy-playground.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_customers,read_orders,read_payment_terms,write_assigned_fulfillment_orders,write_customers,write_discounts,write_draft_orders,write_merchant_managed_fulfillment_orders,write_online_store_navigation,write_orders,write_payment_customizations,write_payment_terms,write_products,write_publications,write_shipping,write_third_party_fulfillment_orders"
+
+[auth]
+redirect_urls = [ "https://deciding-handy-haddock.ngrok-free.app/api/auth" ]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false

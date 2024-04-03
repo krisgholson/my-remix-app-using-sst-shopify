@@ -1,0 +1,24 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "ee6c10bc31954f64ccc00f995ccc2754"
+name = "my-remix-app (dev)"
+handle = "my-remix-app-dev"
+application_url = "https://d3rrs21dxabqgx.cloudfront.net"
+embedded = true
+
+[build]
+dev_store_url = "upcycle-shared-dev.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_customers,read_orders,read_payment_terms,write_assigned_fulfillment_orders,write_customers,write_discounts,write_draft_orders,write_merchant_managed_fulfillment_orders,write_online_store_navigation,write_orders,write_payment_customizations,write_payment_terms,write_products,write_publications,write_shipping,write_third_party_fulfillment_orders"
+
+[auth]
+redirect_urls = [ "https://d3rrs21dxabqgx.cloudfront.net/api/auth" ]
+
+[webhooks]
+api_version = "2024-04"
+
+[pos]
+embedded = false
